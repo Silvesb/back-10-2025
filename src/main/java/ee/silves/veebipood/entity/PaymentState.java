@@ -1,0 +1,5 @@
+package ee.silves.veebipood.entity;
+
+public enum PaymentState {
+    INITIAL, SETTLED, FAILED, ABANDONED, VOIDED
+}

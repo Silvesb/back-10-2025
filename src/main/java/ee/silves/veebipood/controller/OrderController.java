@@ -16,7 +16,6 @@ import java.util.Date;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
 public class OrderController {
 
     @Autowired

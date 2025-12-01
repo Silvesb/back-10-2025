@@ -45,8 +45,6 @@ public class SecurityConfig {
                                 .requestMatchers(HttpMethod.GET, "products").hasAuthority("admin")
                                 .requestMatchers(HttpMethod.PUT, "products").hasAuthority("admin")
                                 .requestMatchers(HttpMethod.DELETE, "products").hasAuthority("admin")
-                                .requestMatchers(HttpMethod.PATCH, "change-admin").hasAuthority("superadmin")
-                                .requestMatchers(HttpMethod.GET, "persons").hasAuthority("superadmin")
                                 .anyRequest().authenticated())
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
